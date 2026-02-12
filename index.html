@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>ベストチョイスゲーム</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app-wrapper">
+
+    <!-- ヘッダー -->
+    <div class="app-header">
+      <h1 class="app-title">ベストチョイスゲーム</h1>
+      <p class="app-subtitle">
+        選択肢のメリットを考えよう！
+      </p>
+    </div>
+
+    <!-- 進捗 -->
+    <div id="progress-container">
+      <div id="progress-text">進行状況：1 / 5 問</div>
+      <div id="progress-bar-bg">
+        <div id="progress-bar"></div>
+      </div>
+    </div>
+
+    <!-- クイズカード -->
+    <div id="quiz-container" class="card">
+      <h2 id="question">問題がここに表示されます</h2>
+
+      <div id="options"></div>
+
+      <div class="bottom-area">
+        <div id="score">現在のスコア：0点</div>
+        <button id="confirmBtn" onclick="confirmAndNext()" disabled>
+          次へ →
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
