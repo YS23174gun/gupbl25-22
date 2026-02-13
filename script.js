@@ -1,4 +1,4 @@
-console.log("script.js loaded");
+// console.log("script.js loaded");
 
 const state = {
   scorePlus: 0,
@@ -106,11 +106,11 @@ function confirmAndNext() {
 }
 
 /* ===============================
-   スコア表示更新
+   ポイント表示更新
 ================================ */
 function updateScoreDisplay() {
   document.getElementById("score").textContent =
-    `現在のスコア： ${state.scorePlus} 点`;
+    `現在のポイント： ${state.scorePlus} 点`;
 }
 
 /* ===============================
@@ -162,7 +162,7 @@ function finishGame() {
       </div>
 
       <div class="summary-box final-total">
-        最終スコア<br><strong>${finalScore}</strong>
+        最終ポイント<br><strong>${finalScore}</strong>
       </div>
     </div>
 
